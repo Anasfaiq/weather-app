@@ -11,12 +11,9 @@
 }
 
 @layer components {
-  /* .card {
-    @apply bg-white rounded-xl shadow-2xl p-2 w-full max-w-sm md:max-w-md lg:max-w-2xl xl:max-w-5xl mx-auto mt-10 flex flex-col items-center;
-  } */
 
   .card {
-    @apply bg-white rounded-3xl shadow-2xl
+    @apply bg-white rounded-3xl shadow-2xl min-h-screen
           w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl
           p-5 flex flex-col gap-2 mx-auto m-2;
   } 
@@ -24,10 +21,6 @@
   .search-bar {
     @apply w-full
   }
-
-  /* .search-bar input {
-    @apply w-full p-3 rounded-lg border-0 bg-blue-100/30 focus:outline-none focus:ring-2 focus:ring-blue-500;
-  } */
 
   .search-bar input {
     @apply w-full px-4 py-3 rounded-xl
@@ -76,12 +69,51 @@
     @apply text-sm text-gray-200 mb-4;
   }
 
+  .additional-info {
+    @apply flex justify-around w-full my-6;
+  }
+
+  .additional-info div {
+    @apply flex flex-col items-center gap-1;
+  }
+
+  .additional-info div span {
+    @apply text-xs;
+  }
+
+  .additional-info div p {
+    @apply text-lg font-semibold;
+  }
+
   .additional-info div img {
     @apply w-5 h-5;
   }
 
+  .forecast-section {
+    @apply flex flex-col gap-2 mt-4;
+  }
+  
   .forecast-card img {
-    @apply w-5 h-5;
+    @apply w-8 h-8;
+  }
+
+  .forecast-cards {
+    @apply flex gap-2 overflow-x-auto ;
+  }
+
+  .forecast-card {
+    @apply flex flex-col justify-between items-center
+           p-4 w-24 h-40 shrink-0 rounded-xl;
+  }
+
+  /* Chrome, Edge, Safari */
+  .forecast-cards::-webkit-scrollbar {
+    height: 0;
+  }
+
+  /* Firefox */
+  .forecast-cards {
+    scrollbar-width: none;
   }
 
 }
