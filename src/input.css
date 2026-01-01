@@ -4,8 +4,84 @@
   body {
     @apply bg-blue-100 text-gray-800 font-sans;
   }
+
+  main {
+    @apply flex flex-col ;
+  }
 }
 
 @layer components {
-  
+  /* .card {
+    @apply bg-white rounded-xl shadow-2xl p-2 w-full max-w-sm md:max-w-md lg:max-w-2xl xl:max-w-5xl mx-auto mt-10 flex flex-col items-center;
+  } */
+
+  .card {
+    @apply bg-white rounded-3xl shadow-2xl
+          w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl
+          p-5 flex flex-col gap-2 mx-auto m-2;
+  } 
+
+  .search-bar {
+    @apply w-full
+  }
+
+  /* .search-bar input {
+    @apply w-full p-3 rounded-lg border-0 bg-blue-100/30 focus:outline-none focus:ring-2 focus:ring-blue-500;
+  } */
+
+  .search-bar input {
+    @apply w-full px-4 py-3 rounded-xl
+          bg-blue-100/40
+          focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+
+  .location-info {
+    @apply flex flex-col items-center justify-center text-center my-4;
+  }
+
+  .location-text {
+    @apply text-2xl font-semibold;
+  }
+
+  .date-text {
+    @apply text-sm text-gray-400;
+  }
+
+  .location-info img {
+    @apply w-5 h-5;
+  }
+
+  .location-container {
+    @apply flex items-center gap-2;
+  }
+
+  .temperature-info {
+    @apply flex flex-col gap-2 items-center my-4
+          bg-blue-500 p-4 rounded-2xl text-white shadow-xl;
+  }
+
+  .weather-icon {
+    @apply w-20 h-20 my-2;
+  }
+
+  .temperature {
+    @apply text-5xl font-bold;
+  }
+
+  .weather-desc {
+    @apply text-xl;
+  }
+
+  .feels-like {
+    @apply text-sm text-gray-200 mb-4;
+  }
+
+  .additional-info div img {
+    @apply w-5 h-5;
+  }
+
+  .forecast-card img {
+    @apply w-5 h-5;
+  }
+
 }
