@@ -24,9 +24,18 @@
 
   .search-bar input {
     @apply w-full px-4 py-3 rounded-xl
-          bg-blue-100/40
-          focus:outline-none focus:ring-2 focus:ring-blue-500;
+          bg-blue-100/20
+          focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200;
   }
+
+  .suggestions {
+    @apply bg-white rounded-xl shadow-lg mt-2 overflow-hidden;
+  }
+
+  .suggestion-item {
+    @apply px-4 py-2 cursor-pointer hover:bg-blue-100 text-sm;
+  }
+
 
   .location-info {
     @apply flex flex-col items-center justify-center text-center my-4;
@@ -103,7 +112,7 @@
 
   .forecast-card {
     @apply flex flex-col justify-between items-center
-           p-4 w-24 h-40 shrink-0 rounded-xl;
+           p-4 w-24 h-34 shrink-0 rounded-xl;
   }
 
   /* Chrome, Edge, Safari */

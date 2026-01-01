@@ -12,7 +12,8 @@
   
     <header>
       <div class="search-bar">
-        <input type="text" placeholder="Search city" class="search-input">
+        <input type="text" placeholder="Search city" class="search-input" id="searchInput">
+        <div id="suggestions" class="suggestions"></div>
       </div>
     </header>
 
@@ -21,79 +22,47 @@
       <section class="location-info">
         <div class="location-container">
           <img src="images/pin.png" alt="">
-          <p class="location-text">San Francisco</p>
+          <p class="location-text" id="cityName">San Francisco</p>
         </div>
-        <p class="date-text">Thursday, January 1</p>
+        <p class="date-text" id="dateText">Thursday, January 1</p>
       </section>
 
       <section class="temperature-info">
-        <img class="weather-icon" src="images/cloud.png" alt="">
-        <span class="temperature">18°</span>
-        <span class="weather-desc">Partly Cloudy</span>
-        <span class="feels-like">Feels like 16°</span>
+        <img class="weather-icon" id="weatherIcon" src="images/cloud.png" alt="">
+        <span class="temperature" id="temperature">18°</span>
+        <span class="weather-desc" id="weatherDesc">Partly Cloudy</span>
+        <span class="feels-like" id="feelsLike">Feels like 16°</span>
       </section>
 
       <section class="additional-info">
         <div>
           <img src="images/drop.png" alt="">
           <span>Humidity</span>
-          <p>72%</p>
+          <p id="humidity">72%</p>
         </div>
         <div>
           <img src="images/wind.png" alt="">
           <span>Wind</span>
-          <p>5 km/h</p>
+          <p id="wind">5 km/h</p>
         </div>
         <div>
           <img src="images/gauge.png" alt="">
           <span>Pressure</span>
-          <p>1013 mb</p>
+          <p id="pressure">1013 mb</p>
         </div>
       </section>
 
       <section class="forecast-section">
         <h2>7-Day Forecast</h2>
-        <div class="forecast-cards">
-          <div class="forecast-card">
-            <p>Fri</p>
-            <img src="images/sun.png" alt="">
-            <p>20° / 12°</p>
-          </div>
-          <div class="forecast-card">
-            <p>Sat</p>
-            <img src="images/cloud.png" alt="">
-            <p>18° / 11°</p>
-          </div>
-          <div class="forecast-card">
-            <p>Sun</p>
-            <img src="images/rain.png" alt="">
-            <p>16° / 10°</p>
-          </div>
-          <div class="forecast-card">
-            <p>Mon</p>
-            <img src="images/sun.png" alt="">
-            <p>21° / 13°</p>
-          </div>
-          <div class="forecast-card">
-            <p>Tue</p>
-            <img src="images/cloud.png" alt="">
-            <p>19° / 12°</p>
-          </div>
-          <div class="forecast-card">
-            <p>Wed</p>
-            <img src="images/rain.png" alt="">
-            <p>17° / 11°</p>
-          </div>
-          <div class="forecast-card">
-            <p>Thu</p>
-            <img src="images/sun.png" alt="">
-            <p>22° / 14°</p>
-          </div>
+        <div class="forecast-cards" id="forecastCards">
+          <!-- Forecast cards will be appended here -->
         </div>
       </section>
 
     </main>
   </div>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
