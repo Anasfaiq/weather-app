@@ -1,4 +1,4 @@
-const API_KEY = "60ee66ecf8bf4345aff102819260101";
+const API_KEY = "91d9f7e979e64b4cb89110400260901";
 const forecastCardsEl = document.getElementById("forecastCards");
 const suggestionsEl = document.getElementById("suggestions");
 
