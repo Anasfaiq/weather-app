@@ -28,7 +28,7 @@ The Weather App is a web-based application that provides real-time weather infor
 * WeatherAPI ([https://www.weatherapi.com/](https://www.weatherapi.com/))
 
 ## Project Structure
-
+```
 ├── index.html
 ├── script.js
 ├── src/
@@ -39,6 +39,7 @@ The Weather App is a web-based application that provides real-time weather infor
 │ ├── drop.png
 │ ├── wind.png
 │ └── gauge.png
+```
 
 ## How It Works
 
